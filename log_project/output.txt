@@ -1,0 +1,19 @@
+vagrant@vagrant:/vagrant$ python logs_report.py
+/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+Days where % error logs/total > 1.0%:
+Day ------ Percent Status Error
+2016-07-17 ------ 2.26
+
+Authors Ordered By Popularity:
+Author ------ Views
+Ursula La Multa ------ 512805
+Rudolf von Treppenwitz ------ 427781
+Anonymous Contributor ------ 171762
+Markoff Chaney ------ 85387
+
+Top 3 Popular Articles:
+Article Title ------ Views
+Candidate is jerk, alleges rival ------ 342102
+Bears love berries, alleges bear ------ 256365
+Bad things gone, say good people ------ 171762
