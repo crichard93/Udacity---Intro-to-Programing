@@ -1,0 +1,173 @@
+<!--
+Creator: Cory Richard 
+Date updated: 02/21/2018
+
+Description: These are my notes from Udacity's Intro to Programming Nanodegree. 
+It covers the HTML Basics, HTML Structured Document, and CSS Styling Lessons. 
+
+This is an HTML comment. 
+Comments are ignored by the computer and are used to communicate with anyone that
+has to interact with the source code. These will not be visible to the user unless the user 
+opens the source file with a text editor. -->
+
+<!-- <doctype> signifies the type of HTML doc. HTML tells the browser the page is an HTML5 doc. There are other doctypes out there, but HTML5 is the most recent version-->
+<!doctype HTML>
+
+<!-- All of the code for the page needs to be enclosed by HTML opening and closing tags. -->
+<html lang="en">
+
+	<!-- <Head> element contains metadata that will not be visible in the document's page. -->
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="Lesson_3_Project.css">
+		<!-- <title> element provides the name of the page that will show in the browser-->
+		<title> Cory's Notes </title>
+	</head>
+
+	<!-- <body> element contains the page's content. Everything the user sees has to be contained within body.
+	We can use indentation to make it easier to read by indenting everything in the body -->
+
+	<body>
+		<!-- We can use headers to organize text. Headers go from h1 to h6.  -->
+		<h1> Important Concepts </h1>
+		<!--Breaking up the Lessons and sub-lessons with <div>s for upcoming styling-->
+		<div class = "Lesson_Body">
+			<h3 class="Lesson_Header"> Lesson 1: HTML Basics </h3>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> World Wide Web </h4> <!-- Experimented with h1 - h6 here. h4 seems to look the same as bold-->
+				<p> 
+					The Web is a collection of HTML documents connected through several components. The major components are: Browsers, Servers, Internet, and HTML documents.
+					Browsers, such as Internet Explorer, Firefox, Chrome, make requests to servers through the Internet using HTTP protocol in order to view HTML documents. 
+					Servers are computers specialized to host HTML files. Servers will send the HTML document to the Brower, which is then interpretted by the browser to provide a web page for the user. 
+				</p>
+			</div>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> HTML </h4>
+				<p> 
+					HTML stands for <em> Hypertext Markup Language</em>. It's components are text content, markup (or formatting), and references to other documents, e.g. images and videos 
+				</p>
+			</div>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> HTML Tags and Elements</h4>
+				<p> 
+					HTML elements are used to engineer HTML documents. Each element begins with an opening tag  and most end with a closing tag. <a href="https://youtu.be/-0S9lBFHeo0">
+					This video</a> explains the structure of elements very thoroughly! 
+				</p>
+			</div>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> Inline and Block Elements </h4>
+				<p>
+					Block elements draw an invisible container around their text. Anything outside of the block will go to the next line or previous lines.  
+					Inline elements can be thought of as characters, in that they will output on the same line as the last text/inline element provided there is room in the line.
+				</p>
+				<p>
+					Some examples of <em> block </em> elements include &lt;p&gt;, &lt;div&gt;, and &lt;form&gt;. 
+				<br>
+					Some examples of <em> inline </em> elements are formatting elements, such as &lt;b&gt; and &lt;em&gt;. 
+				</p>
+			</div>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> HTML Document Structure </h4>
+				<p> 
+					Each HTML document has a common structure. <a href = "https://youtu.be/VL7Wm0UzY6s"> This video </a> provides a thorough breakdown of the structure of HTML documents. 
+					The components of the HTML structure are:
+				</p>
+					<ol>
+						<li> Doctype - Declares version of HTML of document. html as the doctype is HTML5</li>
+						<li> HTML - element that encloses everything except doctype</li>
+						<li> Head - Metedata that is not visible in the window, but is relevant to the page goes here</li>
+						<li> Title - This is the text that is displayed as the title of the window for this page. </li>
+						<li> Body - This is where the text displayed to the user is placed. </li>
+					</ol>
+			</div>
+		</div>
+		<div class="Lesson_Body">
+			<h3 class="Lesson_Header"> Lesson 2: Creating a Structured Document</h3>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> Languages Used to Build a Webpage </h4>
+				<p>
+					Three languages used to design web pages are HTML, CSS, and JavaScript.
+					With a web page open in your browser, you can right click anywhere on the web page and select <b> Inspect Element</b> 
+					to bring up the developer tools. This allows you to view and edit the brower's interpretation of the page, which includes
+					its interpretation of HTML and CSS code used to create the web page. 
+					Each of these languages serve a unique purpose within Front-End Web Development, succinctly described below:
+				</p>
+					<ol>
+						<li> HTML - Provides the page with structure and text.</li>
+						<li> CSS - Used to style HTML texts and objects, such as font size and color to name a few properties.</li>
+						<li> JavaScript - Allows the user to interact with the page.</li>
+					</ol>
+			</div>
+			<div class="Sub_Lesson_Body">
+				<h4 class="Lesson_Subheader"> Structure Basics </h4>
+				<div class="Horizontal_View"> <!--Horizontal View - A view with Text on left and Image on right, Flex fitted-->
+					<div class="Horizontal_Text"> 
+						<p>	
+							Elements, enclosed by tags in HTML, become rectangular objects when 
+							the page is interpreted by a web browser. These objects form the Document Object Model, or <b>DOM</b>, which is a hierachical tree of the objects on the page. The image to the right, via https://www.w3schools.com/js/pic_htmltree.gif, demonstrates the hierarchy of a web page.
+						</p>
+						<p>
+							All objects, even ones that are explicitly circles, are technically rectangular objects on the web page. 
+							<a href = http://assignments.udacity-extras.appspot.com/courses/html-css/samples/shapes.html > 
+							This page</a> provides an example to view and experiment with the CSS styling behind some circular-looking objects
+							that are actually rectangular objects on the page. Just right click and press <b> Inspect Element </b>. 
+							Additionally, <b> boxifying </b> is the term used to describe visually dividing a web page into its most basic rectangular objects.
+						</p>
+					</div> 
+					<div class = "Horizontal_Image">
+						<img class = "Example Image" src="https://www.w3schools.com/js/pic_htmltree.gif" alt="Tree Diagram Image here.">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<div class="Lesson_Body">
+		<h3 class="Lesson_Header"> Lesson 3: Adding CSS Style </h3>
+		<div class="Sub_Lesson_Body">
+			<h4 class="Lesson_Subheader"> CSS Basics</h4>
+			<p>
+				CSS is the web development language used to stylize web pages. It does this by applying a defined style to elements identified by either a class or tag.  
+				CSS stands for Cascading Style Sheets. The term "cascading" arises from the fact that style rules are applied to child elements, a feature that can save developers time. 
+				Another great feature is that the child elements styling can be overwritten, if needed, as the most specific style is applied in CSS. 
+				When a browswer displays a page to the user, there is an order (think order of operations in algebra), that style is applied. 
+				First, the default stayle of the browser's style is applied, then the style specified by a separate .css file overwrites any browser style. 
+				Following that, a stylesheet inside of the HTML file is applied after both of the previous options. Finally, any inline style elements are applied last. 
+				Ideally, we should only use a separate .css file, but small projects benefit from using a stylesheet internal to the HTML file. 
+				Last, but not least, any inline styles are displayed last, however, inline style elements are very cluttering, so they should be avoided. 
+			</p>
+		</div>
+		<div class="Sub_Lesson_Body">
+			<h4 class="Lesson_Subheader"> Applying CSS Style</h4>
+			<p>
+				In order to apply CSS styling, you will have to write a selector to identify elements of the page that the style will apply to on the page. 
+				The elements can be defined by either their class or their tag. A class is declared in the HTML file within the opening and classing tags as an attribute. 
+				Below is an example of assigning an element a class and then a style within the HTML file:
+			</p>
+			<p>
+				<img class="Centered_Image" src="Example_of_declaring_classes_and_applying_style.jpg" alt="Example image of declaring class and applying style">
+			</p>
+			<p>	
+				In the example above, provided by Udacity's Intro to Programming materials via https://classroom.udacity.com/nanodegrees/nd000/parts/c166b0b6-d5c7-4cc9-9595-2b7a1c7b75e1/modules/01b5b80f-8256-4126-bf54-b11f809acd88/lessons/d48f9f5d-8b12-4a12-b59c-2c5c909ec99c/concepts/3b843526-d272-434c-a13b-456cd0ecb3b2, the stylesheet is included in the HTML file. Within the example, 3 different &lt;div&gt;s classes are defined; stop, slow, and go. 
+				Each one is an element on the page. The &lt;div&gt;s tag elements are all assigned the same size height and width, while each element is then separately assigned a different background color using their classes. 
+				This is a great example of utilizing CSS style to create a stoplight on a webpage within the HTML. 
+			</p>
+				
+				<div class="Horizontal_View">
+					<div class="Horizontal_Text">
+						<p>
+							More often, you will use a separate .css file to apply style to a page. 
+							In order to link the HTML file to the CSS file, you will need to utilize the
+							head section of the HTML. 
+							In the HTML text, you use the &lt;link&gt; tag within the &lt;head&gt; element to create the link to the CSS file. 
+						</p> An example of doing that is to the right:
+					</div>
+					<div class="Horizontal_Image">
+						<p>
+							<img class="Example Image" src="Example_of_linking_a_css_file.jpg" alt="Example of Linking a css file here">
+						</p>
+					</div>
+				</div>	
+		</div>
+	</div>	
+	</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+	background-color:#f3f7b9;
+	font-family:Arial,Helvetica;
+}
+.Lesson_Body {
+	color:#450a54;
+	border:5px solid;
+	margin-bottom: 10px;
+	padding: 5px
+	
+}
+
+.Horizontal_View{
+	display:flex;
+	flex-direction:row;
+}
+.Horizontal_Text{
+	max-width:60%;
+	margin-right: 5px;
+}
+
+.Sub_Lesson_Body{
+	border-radius: 45px;
+	border: 5px solid blue;	
+	padding: 15px;
+	margin: 10px;
+}
+
+h1{
+	color:blue;
+
+}
+
+h4{
+	color:orange;
+
+}
+
+.Centered_Image{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:50%;
+	
+}
