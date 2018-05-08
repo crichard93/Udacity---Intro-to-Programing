@@ -23,5 +23,5 @@ Using OOP concepts in Python, I put together a movie website with HTML and CSS w
 some of my favorite movies.  
 
 ## Quiz  
-Using Python, I create a fill-in-the-blank style quiz that a user can take that  has  
-different levels of difficulty.  
+Using Python, I create a fill-in-the-blank style quiz that a user can take. It has  
+3 different levels of difficulty that the user can choose from upon starting the quiz.  
