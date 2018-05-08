@@ -4,6 +4,11 @@ Udacity's Intro to Programming Nanodegree. Each project has an individual README
 their directory that provides instruction on how to run the project. Below is a  
 brief overview of each project. 
 
+## Python Version 2
+Please note that all projects involving Python utilized Python 2.7.14 and will not run  
+with Python 3.x. I was not opposed to Python 3, but the courses were taught in Python 2  
+so the projects are in Python 2 as a result.  
+
 ## Logs Analysis Project  
 In this project, I used the PostgresQL DB API and Python to generate a report from a  
 database on several key details, such as, the most popular authors and days where 1% or  
