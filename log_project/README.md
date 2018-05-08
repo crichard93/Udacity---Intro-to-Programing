@@ -39,15 +39,14 @@ directory. Then, run PostgresQL with the command `psql`. Connect to the _news_ d
 by entering `\c news`
 
 In the _news_ database, enter the following queries:  
-1. `CREATE VIEW errors AS  
-    SELECT date_trunc('day',time) AS date, count(status) AS error_count  
-    FROM log WHERE status='404 NOT FOUND'  
-    GROUP BY date ORDER BY date ASC;`  
-2. `CREATE VIEW daily_log AS  
-    SELECT date_trunc('day',time) AS date, count(status) AS daily_views  
-    FROM log  
-    GROUP BY date ORDER BY date ASC;`  
-
+1. `CREATE VIEW errors AS`    
+   `SELECT date_trunc('day',time) AS date, count(status) AS error_count`  
+   `FROM log WHERE status='404 NOT FOUND'`  
+   `GROUP BY date ORDER BY date ASC;`  
+2. `CREATE VIEW daily_log AS`  
+   `SELECT date_trunc('day',time) AS date, count(status) AS daily_views`  
+   `FROM log`  
+   `GROUP BY date ORDER BY date ASC;`  
 ##Running The Report  
 Download and move **logs_report.py**, to the **vagrant** directory. You can exit psql by  
 entering `\q`. From vagrant, run the command `python logs_report.py` and the report  
